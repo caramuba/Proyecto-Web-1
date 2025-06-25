@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     overflow-x: hidden;
@@ -26,23 +31,24 @@ body {
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: center;
-}
-
-.navbar ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
+    justify-content: space-evenly;
 }
 
 .navbar a {
+    display: flex;
     background-color: #794C2D;
     color: #F0E0BE;
     text-decoration: none;
     font-weight: bold;
     padding: 6px 12px;
     border-radius: 15px;
+}
+
+.navbar a:hover {
+    background-color: #95B64B;
+    color: #2E3A16;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.2s ease
 }
 
 .contenidoPrincipal {
